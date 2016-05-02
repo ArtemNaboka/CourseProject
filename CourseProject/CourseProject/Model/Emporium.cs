@@ -8,18 +8,33 @@ namespace CourseProject.Model
 {
     class Emporium
     {
-        string name;
-        string address;
-        string phone;
-        struct TimeOfStart
+        public string name;
+        public string address;
+        public string phone;
+        public string specialization;
+        public string FormOfOwn;
+        public struct TimeOfStart
         {
-            int hours;
-            int minutes;
+            public int hours;
+            public int minutes;
         }
-        struct TimeOfFinish
+        public struct TimeOfFinish
         {
-            int hours;
-            int minutes;
+            public int hours;
+            public int minutes;
         }
+
+        public TimeOfStart timeOfStart;
+        public TimeOfFinish timeOfFinish;
+
+        /*public Emporium(string name, string address, string phone, string specialization, string FormOfOwn, TimeOfStart TOS, TimeOfFinish TOF)
+        {
+            this.name = name;
+            this.address = address;
+            this.specialization = specialization;
+            this.FormOfOwn = FormOfOwn;
+            timeOfStart = TOS;
+            timeOfFinish = TOF;
+        }*/
     }
 }

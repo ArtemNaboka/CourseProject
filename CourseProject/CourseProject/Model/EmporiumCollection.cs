@@ -8,24 +8,25 @@ namespace CourseProject.Model
 {
     class EmporiumCollection
     {
-        List<Emporium> emporiums = new List<Emporium>();
+        public List<Emporium> emporiums = new List<Emporium>();
         public Emporium this[int i]
         {
             get
             {
-                return emporiums[i];
+                if (i >= 0 && i < emporiums.Count)
+                {
+                    return emporiums[i];
+                }
+                return null;
             }
-        }
-       
-
-        //LIST
-        
-        public void Addd(Emporium emp)
+        }               
+        public void Add(Emporium emp)
         {
             emporiums.Add(emp);
         }
-        public int Findd(Emporium emp)
+        public int Find(Emporium emp)
         {
+            
             for(int i = 0; i < emporiums.Count; i++)
             {
                 if(emporiums[i].Equals(emporiums))
@@ -35,7 +36,7 @@ namespace CourseProject.Model
             }
             return -1;
         }
-        public void Delete(Emporium emp)
+        public void Remove(Emporium emp)
         {
             emporiums.Remove(emp);
         }
