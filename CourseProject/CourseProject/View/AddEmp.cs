@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 
 
+
 namespace CourseProject
 {
     public partial class AddEmp : Form
@@ -52,11 +53,11 @@ namespace CourseProject
             {
                 Emporium emporium = new Emporium()
                 {
-                    name = NameOfEmp.Text,
-                    address = AddressOfEmp.Text,
+                    name = NameOfEmp.Text.Trim(),
+                    address = AddressOfEmp.Text.Trim(),
                     phone = "+38(057)-" + FirstDigs.Text + "-" + SecondDigs.Text + "-" + ThirdDigs.Text,
-                    specialization = (OtherSpec.Visible == true) ? OtherSpec.Text : special.Text,
-                    FormOfOwn = OtherFormOfOwn.Visible == true ? OtherFormOfOwn.Text : FormOfOwn.Text,  
+                    specialization = (OtherSpec.Visible == true) ? OtherSpec.Text.Trim() : special.Text,
+                    FormOfOwn = OtherFormOfOwn.Visible == true ? OtherFormOfOwn.Text.Trim() : FormOfOwn.Text,  
                     timeOfStart = new Emporium.TimeOfStart()
                     {
                         hours = Convert.ToInt32(HoursOfStart.Text),
@@ -71,17 +72,25 @@ namespace CourseProject
                 
                 System.IO.StreamWriter sw = new System.IO.StreamWriter("Information.txt", true, Encoding.Default);
                 sw.WriteLine(emporium.name + ";" + emporium.address + ";" + emporium.phone + ";" + emporium.specialization + ";" + emporium.FormOfOwn + ";" + 
-                    emporium.timeOfStart.hours + ";" + emporium.timeOfStart.minutes + ";" + emporium.timeOfFinish.hours + ";" + emporium.timeOfFinish.minutes);
+                    emporium.timeOfStart.hours + ";" + TrueOutput(emporium.timeOfStart.minutes) + ";" + emporium.timeOfFinish.hours + ";"
+                    + TrueOutput(emporium.timeOfFinish.minutes));
                 sw.Close();
                 this.Close();
+                
+                Application.Restart();
+                
             }
+        }
+
+        string TrueOutput(int n)
+        {
+            return (n < 10 ? "0" : "") + n;
         }
         bool NotNumbers(string str)
         {
             for(int i = 0; i < str.Length; i++)
             {
-                if(str[i] != '0' && str[i] != '1' && str[i] != '2' && str[i] != '3' && str[i] != '4' && str[i] != '5' && str[i] != '6' 
-                    && str[i] != '7' && str[i] != '8' && str[i] != '9')
+                if((int)str[i] > 57 || (int)str[i] < 48)
                 {
                     return true;
                 }

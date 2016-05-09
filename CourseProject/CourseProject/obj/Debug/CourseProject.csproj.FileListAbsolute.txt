@@ -8,4 +8,4 @@ C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\
 C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
 C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.AddEmp.resources
 C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.View.Main.resources
-C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.Main.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.MajorForm.resources

@@ -9,6 +9,32 @@ namespace CourseProject.Model
     class EmporiumCollection
     {
         public List<Emporium> emporiums = new List<Emporium>();
+        public EmporiumCollection()
+        {
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader("Information.txt", Encoding.Default);
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] formatted = line.Split(new string[] { ";" }, StringSplitOptions.None);
+                emporiums.Add(new Emporium() {
+                    name = formatted[0],
+                    address = formatted[1],
+                    phone = formatted[2],
+                    specialization = formatted[3],
+                    FormOfOwn = formatted[4],
+                    timeOfStart = new Emporium.TimeOfStart()
+                    {
+                        hours = Convert.ToInt32(formatted[5]),
+                        minutes = Convert.ToInt32(formatted[6])
+                    },
+                    timeOfFinish = new Emporium.TimeOfFinish()
+                    {
+                        hours = Convert.ToInt32(formatted[7]),
+                        minutes = Convert.ToInt32(formatted[8])
+                    }
+                });
+            }
+        }
         public Emporium this[int i]
         {
             get

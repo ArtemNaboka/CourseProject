@@ -1,6 +1,6 @@
 ﻿namespace CourseProject
 {
-    partial class Main
+    partial class MajorForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -37,7 +37,12 @@
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.Test = new System.Windows.Forms.TextBox();
+            this.MainList = new System.Windows.Forms.ListBox();
+            this.Search = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Find = new System.Windows.Forms.Button();
+            this.ListForXML = new System.Windows.Forms.ListBox();
+            this.Remove = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
@@ -69,26 +74,26 @@
             // добавитьToolStripMenuItem
             // 
             this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.добавитьToolStripMenuItem.Text = "Добавить";
             this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // найтиToolStripMenuItem
             // 
             this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.найтиToolStripMenuItem.Text = "Найти";
             // 
             // удалитьToolStripMenuItem
             // 
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.удалитьToolStripMenuItem.Text = "Удалить";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -110,26 +115,79 @@
             this.fileSystemWatcher1.SynchronizingObject = this;
             this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
-            // Test
+            // MainList
             // 
-            this.Test.Location = new System.Drawing.Point(57, 90);
-            this.Test.Multiline = true;
-            this.Test.Name = "Test";
-            this.Test.Size = new System.Drawing.Size(730, 348);
-            this.Test.TabIndex = 2;
-            this.Test.TextChanged += new System.EventHandler(this.Test_TextChanged);
+            this.MainList.FormattingEnabled = true;
+            this.MainList.Location = new System.Drawing.Point(93, 112);
+            this.MainList.Name = "MainList";
+            this.MainList.Size = new System.Drawing.Size(714, 290);
+            this.MainList.TabIndex = 2;
+            this.MainList.SelectedIndexChanged += new System.EventHandler(this.MainList_SelectedIndexChanged_1);
             // 
-            // Main
+            // Search
+            // 
+            this.Search.Location = new System.Drawing.Point(245, 56);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(217, 20);
+            this.Search.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(183, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Найти :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Find
+            // 
+            this.Find.Location = new System.Drawing.Point(487, 52);
+            this.Find.Name = "Find";
+            this.Find.Size = new System.Drawing.Size(75, 23);
+            this.Find.TabIndex = 5;
+            this.Find.Text = "Поиск";
+            this.Find.UseVisualStyleBackColor = true;
+            this.Find.Click += new System.EventHandler(this.Find_Click);
+            // 
+            // ListForXML
+            // 
+            this.ListForXML.FormattingEnabled = true;
+            this.ListForXML.Location = new System.Drawing.Point(647, 37);
+            this.ListForXML.Name = "ListForXML";
+            this.ListForXML.Size = new System.Drawing.Size(98, 17);
+            this.ListForXML.TabIndex = 6;
+            // 
+            // Remove
+            // 
+            this.Remove.Enabled = false;
+            this.Remove.Location = new System.Drawing.Point(855, 258);
+            this.Remove.Name = "Remove";
+            this.Remove.Size = new System.Drawing.Size(75, 23);
+            this.Remove.TabIndex = 7;
+            this.Remove.Text = "Удалить";
+            this.Remove.UseVisualStyleBackColor = true;
+            this.Remove.Click += new System.EventHandler(this.Remove_Click);
+            // 
+            // MajorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 492);
-            this.Controls.Add(this.Test);
+            this.Controls.Add(this.Remove);
+            this.Controls.Add(this.ListForXML);
+            this.Controls.Add(this.Find);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Search);
+            this.Controls.Add(this.MainList);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
+            this.Name = "MajorForm";
             this.Text = "TRC Rush";
+            this.Activated += new System.EventHandler(this.MajorForm_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Enter += new System.EventHandler(this.MajorForm_Enter);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
@@ -149,7 +207,12 @@
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.TextBox Test;
+        private System.Windows.Forms.ListBox MainList;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Search;
+        private System.Windows.Forms.Button Find;
+        private System.Windows.Forms.ListBox ListForXML;
+        private System.Windows.Forms.Button Remove;
     }
 }
 
