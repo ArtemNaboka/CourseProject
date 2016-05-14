@@ -1,0 +1,23 @@
+c:\users\пк\documents\visual studio 2015\Projects\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.csprojResolveAssemblyReference.cache
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.Cache
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.AddEmp.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.View.Main.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\CourseProject\CourseProject\obj\Debug\CourseProject.MajorForm.resources
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.csprojResolveAssemblyReference.cache
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.AddEmp.resources
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.MajorForm.resources
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.View.Main.resources
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.Cache
+C:\Users\ПК\Desktop\CourseProject--\CourseProject\CourseProject\obj\Debug\CourseProject.Edit.resources

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<emporiums>
+  <emporium>
+    <name>
+      Dafi
+    </name>
+    <address>
+      NY Square
+    </address>
+    <phone>
+      779-78-16
+    </phone>
+    <specialization>
+      Electronics
+    </specialization>
+    <FormOfOwn>
+      Private
+    </FormOfOwn>
+    <TimeOfStart>
+      <hours>11</hours>
+      <minutes>00</minutes>
+    </TimeOfStart>
+    <TimeOfFinish>
+      <hours>12</hours>
+      <minutes>10</minutes>
+    </TimeOfFinish>
+  </emporium>
+</emporiums> 
